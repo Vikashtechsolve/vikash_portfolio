@@ -31,33 +31,82 @@
 ======================================*/
 
 /* Add responsive hero image styling */
+.hero {
+  position: relative;
+  overflow: hidden;
+}
+
 .hero .one-third.img {
   background-size: contain;
-  background-position: center;
+  background-position: right center;
   background-repeat: no-repeat;
-  height: 400px !important;
+  height: 450px !important;
+  margin-top: -50px;
+  margin-right: 20px;
+  margin-left: 120px;
+  position: relative;
   border-radius: 10px;
-  margin: 20px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  z-index: 1;
+}
+
+.hero .slider-text {
+  position: relative;
+  z-index: 2;
+}
+
+.hero .text {
+  z-index: 3;
+  position: relative;
+  margin-right: 40px;
+}
+
+@media (max-width: 992px) {
+  .hero .one-third.img {
+    height: 400px !important;
+    margin-top: -30px;
+    margin-left: 60px;
+    margin-right: 10px;
+    background-position: center;
+  }
 }
 
 @media (max-width: 768px) {
   .hero .one-third.img {
-    height: 300px !important;
-    margin: 10px;
-    background-size: contain;
+    height: 350px !important;
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    background-position: center;
   }
   
   .hero .slider-text {
     text-align: center;
     padding: 20px;
   }
+
+  .hero .text {
+    margin-right: 0;
+  }
 }
 
 @media (max-width: 576px) {
   .hero .one-third.img {
-    height: 250px !important;
-    margin: 5px;
+    height: 300px !important;
+    margin-top: 10px;
+    background-position: center;
+  }
+}
+
+/* Adjust the text container for better alignment with image */
+.hero .one-forth {
+  padding-right: 40px;
+}
+
+@media (max-width: 768px) {
+  .hero .one-forth {
+    padding-right: 15px;
+    padding-left: 15px;
   }
 }
 
@@ -140,6 +189,28 @@
   transform: scale(1.1);
 }
 
+/* Download CV button styling */
+.download-cv-btn {
+    background-color: #ffbd39 !important;
+    color: #000000 !important;
+    padding: 15px 40px !important;
+    border-radius: 50px !important;
+    font-weight: 600 !important;
+    font-size: 16px !important;
+    border: 2px solid #ffbd39 !important;
+    transition: all 0.3s ease !important;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0 4px 15px rgba(255, 189, 57, 0.2);
+}
+
+.download-cv-btn:hover {
+    background-color: #000000 !important;
+    color: #ffbd39 !important;
+    border-color: #ffbd39 !important;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(255, 189, 57, 0.3);
+}
 
 </style>
 
@@ -168,7 +239,7 @@
           <li class="nav-item">
             <a href="#book-consulting" class="nav-link" style="border-radius: 10px; background-color: #ffbd39; border: 1px solid #ffbd39 !important;
     color: #000000 !important; color: white; padding: 8px 16px;">
-              <span>Book A Section</span>
+              <span>Book A Session</span>
             </a>
           </li>
           
@@ -182,8 +253,8 @@
 	      	<div class="overlay"></div>
 	         <div class="container">
 	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
-	          	<div class="one-third js-fullheight order-md-last img" style="background-image:url(images/Vikash.jpg); background-size: contain; background-position: center; background-repeat: no-repeat;">
-	          	 <div class="overlay" style="opacity: 0.3;"></div>
+	          	<div class="one-third js-fullheight order-md-last img" style="background-image:url(images/Vikash.jpg); background-size: contain; background-position: right center; background-repeat: no-repeat; transform: translateY(-50px);">
+	          	 <div class="overlay" style="opacity: 0.15;"></div>
 	          	</div>
 		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '60%' }">
 		          	<div class="text">
@@ -446,11 +517,14 @@
 
     		<div class="row justify-content-center mt-5">
     			<div class="col-md-6 text-center ftco-animate">
-    				<p><a href="#" class="btn btn-primary py-4 px-5">Download CV</a></p>
+    				<a href="assets/Vikas.pdf" download class="btn download-cv-btn">
+                        Download CV
+                    </a>
     			</div>
     		</div>
     	</div>
     </section>
+
 
    
 
@@ -484,7 +558,7 @@
               </a>
               <div class="text mt-3 float-right d-block">
 
-                <h3 class="heading"><a href="https://phonesvapes4all.co.uk/">Phonesvapes4all</a></h3>
+                <h3 class="heading"><a href="#https://phonesvapes4all.co.uk/">Phonesvapes4all</a></h3>
                 <p>This website is for online service booking for electronic devices repair it's based on UK for UK
                   customer.</p>
               </div>
@@ -496,7 +570,7 @@
               </a>
               <div class="text mt-3 float-right d-block">
 
-                <h3 class="heading"><a href="https://github.com/vikash990/Real-Time-License-Plate-Recognition">Real-Time-License-Plate-Recognition</a></h3>
+                <h3 class="heading"><a href="#https://github.com/vikash990/Real-Time-License-Plate-Recognition">Real-Time-License-Plate-Recognition</a></h3>
                 <p>This web-based app detects and recognizes vehicle license plates from live video using computer vision and OCR, enabling real-time recognition, color-based categorization, tolling, law enforcement, and traffic monitoring.</p>
               </div>
             </div>
@@ -527,8 +601,7 @@
 				</div>
 			  </div>
 			</div>
-		 </div>
-	  </div> -->
+		 </div> -->
     </section>
 
 	<section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
@@ -693,7 +766,8 @@
               </div>
               <div class="text">
                 <h3>Carrer Consultancy</h3>
-                <p>Expert advice on technical solutions and implementations</p>
+                <p>Guiding individuals in career planning, skill development, resume building, and job readiness to achieve professional growth and success.</p>
+                <a href="#book-consulting" class="btn btn-primary">Book Now</a>
               </div>
             </div>
           </div>
@@ -703,8 +777,9 @@
                 <span class="flaticon-ideas"></span>
               </div>
               <div class="text">
-                <h3>Job Consultancy</h3>
-                <p>Developed an IT-focused Job Consultancy platform enabling seamless job postings, resume filtering, and candidate-employer communication through a dynamic web interface.</p>
+                <h3>Industrial Overview </h3>
+                <p>Experienced in web development, UI/UX design, and software engineering. Skilled in creating innovative, responsive, and user-centric digital solutions.</p>
+                <a href="#book-consulting" class="btn btn-primary">Book Now</a>
               </div>
             </div>
           </div>
@@ -714,8 +789,8 @@
                 <span class="flaticon-innovation"></span>
               </div>
               <div class="text">
-                <h3>Personal Guidance</h3>
-                <p>Personalized consulting sessions for your specific needs</p>
+                <h3>Specializion Topic</h3>
+                <p>Specialized in full-stack web development, cloud computing, database management, cybersecurity, and building scalable, efficient software solutions for businesses.</p>
                 <a href="#book-consulting" class="btn btn-primary">Book Now</a>
               </div>
             </div>
@@ -887,4 +962,4 @@
   </script>
     
   </body>
-</html> 
+</html>
