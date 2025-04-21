@@ -5,6 +5,15 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="images/favicon/site.webmanifest">
+    <link rel="mask-icon" href="images/favicon/safari-pinned-tab.svg" color="#ffbd39">
+    <meta name="msapplication-TileColor" content="#ffbd39">
+    <meta name="theme-color" content="#ffffff">
+    
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
 
     <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
@@ -212,6 +221,207 @@
     box-shadow: 0 6px 20px rgba(255, 189, 57, 0.3);
 }
 
+/* Company Cards Styling */
+.company-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    height: 100%;
+    border: 1px solid #eee;
+}
+
+.company-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.company-card .company-icon {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto;
+    background: #ffbd39;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.company-card .company-icon i {
+    color: #000;
+    font-size: 24px;
+}
+
+.company-card h3 {
+    font-size: 20px;
+    margin: 15px 0 10px;
+    color: #000;
+}
+
+.company-card .position {
+    color: #ffbd39;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.company-card .description {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* College Cards Styling */
+.college-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    height: 100%;
+    border: 1px solid #eee;
+    position: relative;
+    overflow: hidden;
+}
+
+.college-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.college-card:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: #ffbd39;
+}
+
+.college-card .college-logo {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #ffbd39;
+    padding: 15px;
+    transition: all 0.3s ease;
+}
+
+.college-card:hover .college-logo {
+    transform: scale(1.05);
+    border-color: #000;
+}
+
+.college-card .college-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: all 0.3s ease;
+}
+
+.college-card:hover .college-logo img {
+    filter: brightness(1.1);
+}
+
+.college-card h3 {
+    font-size: 20px;
+    margin: 15px 0 10px;
+    color: #000;
+}
+
+.college-card .position {
+    color: #ffbd39;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.college-card .description {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* WhatsApp Button Styling */
+.services .btn-primary {
+    background-color: #25D366 !important;
+    border-color: #25D366 !important;
+    color: #fff !important;
+    padding: 10px 25px !important;
+    border-radius: 50px !important;
+    font-weight: 600 !important;
+    transition: all 0.3s ease !important;
+    position: relative !important;
+    overflow: hidden !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 8px !important;
+}
+
+.services .btn-primary:before {
+    content: '\f232';
+    font-family: 'icomoon';
+    font-size: 18px;
+}
+
+.services .btn-primary:hover {
+    background-color: #128C7E !important;
+    border-color: #128C7E !important;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(37, 211, 102, 0.3);
+}
+
+/* Floating WhatsApp Button */
+.float-whatsapp {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #25d366;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.float-whatsapp:hover {
+    background-color: #128C7E;
+    color: #FFF;
+    transform: scale(1.1);
+}
+
+.float-whatsapp i {
+    font-size: 35px;
+}
+
+/* WhatsApp Button Animation */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.float-whatsapp {
+    animation: pulse 2s infinite;
+}
+
 </style>
 
 
@@ -333,6 +543,20 @@
 									  <div class="about-info">
 										<p><span class="title-s">Name: </span> <span>Vikash Dubey</span></p>
 										<p><span class="title-s">Job Role: </span> <span>SR. SOFTWARE DEVELOPER</span></p>
+                    <p><span class="title-s">Job Role: </span> <span>SR. Technical Trainer</span></p>
+
+                    <p><span class="title-s">Job Role: </span> <span>SR. Student Mentor</span></p>
+
+                    <p><span class="title-s">Job Role: </span> <span>SR. Freelancer</span></p>
+
+                    <p><span class="title-s">Job Role: </span> <span>SR. Consultant CTO</span></p>
+
+                    <p><span class="title-s">Job Role: </span> <span>SR. Entrepreneur</span></p>
+
+                    <p><span class="title-s">Job Role: </span> <span>SR. Technical Influencer</span></p>
+
+
+                    
 										<p><span class="title-s">Experience: </span> <span>5 Years 3 Months</span></p>
 										<p><span class="title-s">Address: </span> <span>Pune, India</span></p>
 									  </div>
@@ -422,9 +646,186 @@
 		</div>
     </section>
 
+    <!-- Companies Section -->
+    <section class="ftco-section ftco-no-pb" id="companies-section">
+      <div class="container">
+        <div class="row justify-content-center mb-5 pb-5">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Companies</h1>
+            <h2 class="mb-4">Companies I've Worked With</h2>
+            <p>Professional journey across diverse organizations</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 mb-4">
+            <div class="company-card text-center p-4 ftco-animate">
+              <div class="company-icon mb-3">
+                <i class="icon-building-o"></i>
+              </div>
+              <h3>UpGrad</h3>
+              <p class="position">Senior Technical Trainer</p>
+              <p class="description">Led MERN, Spring Boot, and DevOps projects; designed DSA and CP modules.</p>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="company-card text-center p-4 ftco-animate">
+              <div class="company-icon mb-3">
+                <i class="icon-building-o"></i>
+              </div>
+              <h3>DutosLearning Pvt. Ltd</h3>
+              <p class="position">Senior Software Developer</p>
+              <p class="description">Developed scalable EdTech applications using MERN & Spring Boot.</p>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="company-card text-center p-4 ftco-animate">
+              <div class="company-icon mb-3">
+                <i class="icon-building-o"></i>
+              </div>
+              <h3>Acadeview</h3>
+              <p class="position">Technical Trainer</p>
+              <p class="description">Conducted training sessions and mentored students.</p>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="company-card text-center p-4 ftco-animate">
+              <div class="company-icon mb-3">
+                <i class="icon-building-o"></i>
+              </div>
+              <h3>Blueera</h3>
+              <p class="position">Developer</p>
+              <p class="description">Worked on development projects and solutions.</p>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="company-card text-center p-4 ftco-animate">
+              <div class="company-icon mb-3">
+                <i class="icon-building-o"></i>
+              </div>
+              <h3>QSS Technosoft</h3>
+              <p class="position">Senior Software Engineer</p>
+              <p class="description">Led software development projects and teams.</p>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="company-card text-center p-4 ftco-animate">
+              <div class="company-icon mb-3">
+                <i class="icon-building-o"></i>
+              </div>
+              <h3>Hitbull Eye</h3>
+              <p class="position">Technical Trainer</p>
+              <p class="description">Provided technical training and guidance.</p>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="company-card text-center p-4 ftco-animate">
+              <div class="company-icon mb-3">
+                <i class="icon-building-o"></i>
+              </div>
+              <h3>Cantiliver</h3>
+              <p class="position">Software Developer</p>
+              <p class="description">Contributed to software development projects.</p>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="company-card text-center p-4 ftco-animate">
+              <div class="company-icon mb-3">
+                <i class="icon-building-o"></i>
+              </div>
+              <h3>Quest Global Solution</h3>
+              <p class="position">Software Engineer</p>
+              <p class="description">Worked on global software solutions.</p>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="company-card text-center p-4 ftco-animate">
+              <div class="company-icon mb-3">
+                <i class="icon-building-o"></i>
+              </div>
+              <h3>Saavi Hotels</h3>
+              <p class="position">Software Developer</p>
+              <p class="description">Developed solutions for hospitality sector.</p>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="company-card text-center p-4 ftco-animate">
+              <div class="company-icon mb-3">
+                <i class="icon-building-o"></i>
+              </div>
+              <h3>Lotlite Technology</h3>
+              <p class="position">Software Developer</p>
+              <p class="description">Contributed to technology solutions.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <!-- Colleges Section -->
+    <section class="ftco-section ftco-no-pb" id="colleges-section">
+      <div class="container">
+        <div class="row justify-content-center mb-5 pb-5">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Colleges</h1>
+            <h2 class="mb-4">Colleges I've Worked With</h2>
+            <p>Contributing to education and student development</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 mb-4">
+            <div class="college-card text-center p-4 ftco-animate">
+              <div class="college-logo mb-3">
+                <img src="images/lpu-logo.png" alt="LPU Logo" class="university-logo">
+              </div>
+              <h3>LPU</h3>
+              <p class="position">Technical Trainer</p>
+              <p class="description">Conducted technical training sessions and workshops for students.</p>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="college-card text-center p-4 ftco-animate">
+              <div class="college-logo mb-3">
+                <img src="images/chitkara-logo.png" alt="Chitkara University Logo" class="university-logo">
+              </div>
+              <h3>Chitkara University</h3>
+              <p class="position">Technical Trainer</p>
+              <p class="description">Provided technical education and mentorship to students.</p>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="college-card text-center p-4 ftco-animate">
+              <div class="college-logo mb-3">
+                <img src="images/sushan-logo.png" alt="Sushan University Logo" class="university-logo">
+              </div>
+              <h3>Sushan University</h3>
+              <p class="position">Technical Trainer</p>
+              <p class="description">Delivered technical training and guidance to students.</p>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="college-card text-center p-4 ftco-animate">
+              <div class="college-logo mb-3">
+                <img src="images/bit-logo.png" alt="Birla Institute of Technology Logo" class="university-logo">
+              </div>
+              <h3>Birla Institute of Technology</h3>
+              <p class="position">Technical Trainer</p>
+              <p class="description">Conducted technical workshops and training programs.</p>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="college-card text-center p-4 ftco-animate">
+              <div class="college-logo mb-3">
+                <img src="images/mody-logo.png" alt="Mody University Logo" class="university-logo">
+              </div>
+              <h3>Mody University</h3>
+              <p class="position">Technical Trainer</p>
+              <p class="description">Provided technical education and skill development training.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-	
     <section class="ftco-section ftco-no-pb" id="resume-section">
     	<div class="container">
     		<div class="row justify-content-center pb-5">
@@ -767,7 +1168,7 @@
               <div class="text">
                 <h3>Carrer Consultancy</h3>
                 <p>Guiding individuals in career planning, skill development, resume building, and job readiness to achieve professional growth and success.</p>
-                <a href="#book-consulting" class="btn btn-primary">Book Now</a>
+                <a href="https://wa.me/7439474237?text=Hello!%20I'm%20interested%20in%20booking%20a%20consultation%20for%20Career%20Consultancy" class="btn btn-primary" target="_blank">Book Now</a>
               </div>
             </div>
           </div>
@@ -779,7 +1180,7 @@
               <div class="text">
                 <h3>Industrial Overview </h3>
                 <p>Experienced in web development, UI/UX design, and software engineering. Skilled in creating innovative, responsive, and user-centric digital solutions.</p>
-                <a href="#book-consulting" class="btn btn-primary">Book Now</a>
+                <a href="https://wa.me/7439474237?text=Hello!%20I'm%20interested%20in%20booking%20a%20consultation%20for%20Industrial%20Overview" class="btn btn-primary" target="_blank">Book Now</a>
               </div>
             </div>
           </div>
@@ -791,7 +1192,7 @@
               <div class="text">
                 <h3>Specializion Topic</h3>
                 <p>Specialized in full-stack web development, cloud computing, database management, cybersecurity, and building scalable, efficient software solutions for businesses.</p>
-                <a href="#book-consulting" class="btn btn-primary">Book Now</a>
+                <a href="https://wa.me/7439474237?text=Hello!%20I'm%20interested%20in%20booking%20a%20consultation%20for%20Specialization%20Topic" class="btn btn-primary" target="_blank">Book Now</a>
               </div>
             </div>
           </div>
@@ -954,7 +1355,7 @@
       const whatsappMessage = `New Booking Request:%0A%0AName: ${name}%0AEmail: ${email}%0ASubject: ${subject}%0AMessage: ${message}`;
       
       // WhatsApp API URL with your number
-      const whatsappUrl = `https://wa.me/917439474237?text=${whatsappMessage}`;
+      const whatsappUrl = `https://wa.me/7439474237?text=${whatsappMessage}`;
       
       // Open WhatsApp in a new tab
       window.open(whatsappUrl, '_blank');
