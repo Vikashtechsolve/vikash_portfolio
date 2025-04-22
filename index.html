@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
     <!-- Favicon -->
+    <link rel="icon" href="images/favicon/vikash-32x32.png" type="image/x-icon" />
+
     <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
@@ -519,6 +521,162 @@
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
+/* Testimonials Styling */
+.testimonial-item {
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s ease;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #eee;
+  padding: 30px;
+  margin: 15px;
+}
+
+.testimonial-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.testimonial-img {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid #ffbd39;
+  padding: 3px;
+  transition: all 0.4s ease;
+}
+
+.testimonial-item:hover .testimonial-img {
+  transform: scale(1.05);
+  border-color: #000;
+}
+
+.testimonial-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.testimonial-content h3 {
+  font-size: 20px;
+  margin: 15px 0 5px;
+  color: #000;
+}
+
+.testimonial-content .position {
+  color: #ffbd39;
+  font-weight: 600;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+.testimonial-content .quote {
+  color: #666;
+  font-size: 15px;
+  line-height: 1.6;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+.testimonial-content .rating {
+  color: #ffbd39;
+  font-size: 18px;
+}
+
+.owl-nav {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.owl-nav button {
+  background: #ffbd39 !important;
+  color: #000 !important;
+  width: 40px;
+  height: 40px;
+  border-radius: 50% !important;
+  margin: 0 10px;
+  transition: all 0.3s ease;
+}
+
+.owl-nav button:hover {
+  background: #000 !important;
+  color: #ffbd39 !important;
+  transform: scale(1.1);
+}
+
+.owl-dots {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.owl-dots .owl-dot {
+  width: 12px;
+  height: 12px;
+  margin: 0 5px;
+  background: #ddd !important;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.owl-dots .owl-dot.active {
+  background: #ffbd39 !important;
+  transform: scale(1.2);
+}
+
+/* Slider Controls Styling */
+.slider-controls {
+  margin-top: 30px;
+}
+
+.slider-controls .btn {
+  background-color: #ffbd39;
+  color: #000;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 50px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  margin: 0 10px;
+}
+
+.slider-controls .btn:hover {
+  background-color: #000;
+  color: #ffbd39;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.slider-controls .btn i {
+  margin: 0 5px;
+}
+
+/* Animation for testimonials */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+.fadeIn {
+  animation-name: fadeIn;
+}
+
 </style>
 
 
@@ -1017,22 +1175,22 @@
             <div class="consulting-card text-center p-4 ftco-animate" data-aos="fade-up" data-aos-delay="100">
               <div class="icon-wrapper mb-4">
                 <i class="icon-user-tie"></i>
-              </div>
+                  </div>
               <h3>One-to-One Career Counselling</h3>
               <p>Personalized career guidance to help you navigate your professional journey, identify opportunities, and achieve your career goals.</p>
               <a href="https://wa.me/7439474237?text=Hello!%20I'm%20interested%20in%20One-to-One%20Career%20Counselling" class="btn btn-primary mt-3" target="_blank">Book Now</a>
-              </div>
-            </div>
+                  </div>
+                </div>
           <div class="col-md-4 mb-4">
             <div class="consulting-card text-center p-4 ftco-animate" data-aos="fade-up" data-aos-delay="200">
               <div class="icon-wrapper mb-4">
                 <i class="icon-graduation-cap"></i>
-          </div>
+                  </div>
               <h3>One-to-One Tutoring</h3>
               <p>Customized learning sessions tailored to your pace and needs, focusing on specific technical skills and concepts you want to master.</p>
               <a href="https://wa.me/7439474237?text=Hello!%20I'm%20interested%20in%20One-to-One%20Tutoring" class="btn btn-primary mt-3" target="_blank">Book Now</a>
-              </div>
-              </div>
+                  </div>
+                </div>
           <div class="col-md-4 mb-4">
             <div class="consulting-card text-center p-4 ftco-animate" data-aos="fade-up" data-aos-delay="300">
               <div class="icon-wrapper mb-4">
@@ -1042,35 +1200,114 @@
               <p>Specialized programs designed for young learners and college students to build foundational skills and prepare for future tech careers.</p>
               <a href="https://wa.me/7439474237?text=Hello!%20I'm%20interested%20in%20programs%20for%20Kids/College%20Students" class="btn btn-primary mt-3" target="_blank">Book Now</a>
           </div>
-              </div>
+        </div>
           <div class="col-md-4 mb-4">
             <div class="consulting-card text-center p-4 ftco-animate" data-aos="fade-up" data-aos-delay="400">
               <div class="icon-wrapper mb-4">
                 <i class="icon-presentation"></i>
-              </div>
+      </div>
               <h3>Group Lectures</h3>
               <p>Interactive group sessions covering various technical topics, perfect for teams, educational institutions, or organizations seeking collective learning.</p>
               <a href="https://wa.me/7439474237?text=Hello!%20I'm%20interested%20in%20Group%20Lectures" class="btn btn-primary mt-3" target="_blank">Book Now</a>
-            </div>
           </div>
+        </div>
           <div class="col-md-4 mb-4">
             <div class="consulting-card text-center p-4 ftco-animate" data-aos="fade-up" data-aos-delay="500">
               <div class="icon-wrapper mb-4">
                 <i class="icon-code"></i>
-              </div>
+                  </div>
               <h3>Live Projects Experience</h3>
               <p>Hands-on experience working on real-world projects, gaining practical skills and building a portfolio that stands out to employers.</p>
               <a href="https://wa.me/7439474237?text=Hello!%20I'm%20interested%20in%20Live%20Projects%20Experience" class="btn btn-primary mt-3" target="_blank">Book Now</a>
-            </div>
-          </div>
+                  </div>
+                </div>
           <div class="col-md-4 mb-4">
             <div class="consulting-card text-center p-4 ftco-animate" data-aos="fade-up" data-aos-delay="600">
               <div class="icon-wrapper mb-4">
                 <i class="icon-question-circle"></i>
-              </div>
+                  </div>
               <h3>Doubt Solving</h3>
               <p>Get your technical questions answered with detailed explanations and practical examples to enhance your understanding.</p>
               <a href="https://wa.me/7439474237?text=Hello!%20I%20have%20some%20doubts%20I'd%20like%20to%20discuss" class="btn btn-primary mt-3" target="_blank">Book Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="ftco-section" id="testimonials-section">
+      <div class="container">
+        <div class="row justify-content-center mb-5 pb-5">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Testimonials</h1>
+            <h2 class="mb-4">What My Students Say</h2>
+            <p>Feedback from students who have worked with me</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="testimonial-slider owl-carousel owl-theme">
+              <!-- Testimonial 1 -->
+              <div class="testimonial-item text-center p-4 ftco-animate" data-aos="fade-up" data-aos-delay="100">
+                <div class="testimonial-img mb-4">
+                  <img src="https://randomuser.me/api/portraits/men/41.jpg" alt="Aayush" class="rounded-circle" onerror="this.src='https://via.placeholder.com/150?text=A'">
+                </div>
+                <div class="testimonial-content">
+                  <h3 class="mb-3">Aayush</h3>
+                  <p class="position mb-4">Software Developer</p>
+                  <p class="quote">"Vikash sir's teaching style is exceptional. He breaks down complex concepts into simple, understandable parts. Thanks to his guidance, I landed my dream job at a top tech company."</p>
+                  <div class="rating">
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+              </div>
+            </div>
+          </div>
+              
+              <!-- Testimonial 2 -->
+              <div class="testimonial-item text-center p-4 ftco-animate" data-aos="fade-up" data-aos-delay="200">
+                <div class="testimonial-img mb-4">
+                  <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Yash" class="rounded-circle" onerror="this.src='https://via.placeholder.com/150?text=Y'">
+                </div>
+                <div class="testimonial-content">
+                  <h3 class="mb-3">Yash</h3>
+                  <p class="position mb-4">Full Stack Developer</p>
+                  <p class="quote">"The practical approach to learning with Vikash sir was exactly what I needed. His real-world project experience and industry insights helped me transition from a beginner to a professional developer."</p>
+                  <div class="rating">
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+              </div>
+            </div>
+          </div>
+              
+              <!-- Testimonial 3 -->
+              <div class="testimonial-item text-center p-4 ftco-animate" data-aos="fade-up" data-aos-delay="300">
+                <div class="testimonial-img mb-4">
+                  <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Komal" class="rounded-circle" onerror="this.src='https://via.placeholder.com/150?text=K'">
+                </div>
+                <div class="testimonial-content">
+                  <h3 class="mb-3">Komal</h3>
+                  <p class="position mb-4">Frontend Developer</p>
+                  <p class="quote">"I was struggling with React concepts until I started learning from Vikash sir. His patience and ability to explain difficult topics in simple terms made all the difference. Now I'm confident in my skills."</p>
+                  <div class="rating">
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+              </div>
+                </div>
+              </div>
+            </div>
+            <div class="slider-controls text-center mt-4">
+              <button class="btn btn-primary prev-btn mr-2"><i class="icon-arrow-left"></i> Previous</button>
+              <button class="btn btn-primary next-btn ml-2">Next <i class="icon-arrow-right"></i></button>
             </div>
           </div>
         </div>
@@ -1274,6 +1511,49 @@
         });
     }
   </script>
-   
+  
+  <!-- Initialize Testimonial Slider -->
+  <script>
+    $(document).ready(function(){
+      var testimonialSlider = $('.testimonial-slider').owlCarousel({
+        loop: true,
+        margin: 30,
+        nav: false,
+        dots: true,
+        autoplay: true,
+        autoplayTimeout: 5000,
+        autoplayHoverPause: true,
+        responsive:{
+          0:{
+            items: 1
+          },
+          768:{
+            items: 2
+          },
+          992:{
+            items: 3
+          }
+        }
+      });
+      
+      // Custom navigation buttons
+      $('.next-btn').click(function() {
+        testimonialSlider.trigger('next.owl.carousel');
+      });
+      
+      $('.prev-btn').click(function() {
+        testimonialSlider.trigger('prev.owl.carousel');
+      });
+      
+      // Add animation to testimonials
+      testimonialSlider.on('changed.owl.carousel', function(event) {
+        $('.testimonial-item').addClass('animated fadeIn');
+        setTimeout(function() {
+          $('.testimonial-item').removeClass('animated fadeIn');
+        }, 1000);
+      });
+    });
+  </script>
+    
   </body>
 </html>
