@@ -422,6 +422,103 @@
     animation: pulse 2s infinite;
 }
 
+.consulting-card {
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s ease;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #eee;
+}
+
+.consulting-card:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background: #ffbd39;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s ease;
+}
+
+.consulting-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.consulting-card:hover:before {
+  transform: scaleX(1);
+}
+
+.consulting-card .icon-wrapper {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto;
+  background: #ffbd39;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.4s ease;
+}
+
+.consulting-card:hover .icon-wrapper {
+  background: #000;
+  transform: rotateY(180deg);
+}
+
+.consulting-card .icon-wrapper i {
+  color: #000;
+  font-size: 32px;
+  transition: all 0.4s ease;
+}
+
+.consulting-card:hover .icon-wrapper i {
+  color: #ffbd39;
+  transform: rotateY(180deg);
+}
+
+.consulting-card h3 {
+  font-size: 20px;
+  margin: 15px 0 10px;
+  color: #000;
+  transition: all 0.3s ease;
+}
+
+.consulting-card:hover h3 {
+  color: #ffbd39;
+}
+
+.consulting-card p {
+  color: #666;
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.consulting-card .btn-primary {
+  background-color: #ffbd39;
+  border-color: #ffbd39;
+  color: #000;
+  font-weight: 600;
+  border-radius: 50px;
+  padding: 8px 25px;
+  transition: all 0.3s ease;
+}
+
+.consulting-card .btn-primary:hover {
+  background-color: #000;
+  border-color: #000;
+  color: #ffbd39;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
 </style>
 
 
@@ -508,14 +605,18 @@
 
 						<br>
 						<br>
-			            <h2>SR. SOFTWARE DEVELOPER
-                  </h2>
-                   <h2>SR. Technical Trainer
-                  </h2>
-                   <h2>Tech Influencer
-                  </h2>
-                  <h2>Student Mentor
-                  </h2>
+			            <h4>SR. SOFTWARE DEVELOPER
+                  </h4>
+                   <h4>SR. Technical Trainer
+                  </h4>
+                   <h4>Tech Influencer
+                  </h4>
+                  <h4>Student Mentor
+                  </h4>
+                  <h4>Consultant Cto
+                  </h4>
+                  <h4>tech Content Developer
+                  </h4>
 						<!-- <h2 class="d-flex" style="margin-bottom: 0">With over 5 years of experience</h2> -->
 						<!-- <br> -->
 			            <!-- <p><a href="https://www.youtube.com/@RishabhMishraOfficial" class="btn btn-primary py-3 px-4">YouTube</a> 
@@ -534,41 +635,41 @@
     	<div class="container">
 			<div class="row">
 				<div class="col-md-12">
-					<div class="row justify-content-start pb-3">
-						<div class="col-md-12 heading-section ftco-animate">
-							<h1 class="big">About</h1>
-							<h2 class="mb-4">About Me</h2>
-							
+						<div class="row justify-content-start pb-3">
+							<div class="col-md-12 heading-section ftco-animate">
+								<h1 class="big">About</h1>
+								<h2 class="mb-4">About Me</h2>
+								
 							<p style="font-size: 1.2rem; line-height: 1.8; margin-bottom: 2rem;">5+ Years of Experience in developing cross-platform applications using
-                ReactJS, Node.js, and React Native. Proficient in HTML, CSS, ExpressJS,
-                MongoDB, JavaScript, PostgreSQL, and AWS cloud services, with expertise in
-                data structures and algorithms (DSA), project management, and competitive
-                programming. Skilled in building scalable solutions and leading projects from
-                inception to completion.</p>
+                  ReactJS, Node.js, and React Native. Proficient in HTML, CSS, ExpressJS,
+                  MongoDB, JavaScript, PostgreSQL, and AWS cloud services, with expertise in
+                  data structures and algorithms (DSA), project management, and competitive
+                  programming. Skilled in building scalable solutions and leading projects from
+                  inception to completion.</p>
 							<ul class="about-info mt-4 px-md-0 px-2" style="font-size: 1.1rem; line-height: 1.6;">
-								<li class="d-flex"><span>Profile:</span> <span>SOFTWARE DEVELOPER
-                </span></li>
-								<li class="d-flex"><span>Domain:</span> <span>ReactJs React-Redux,Hooks,Anugular 18,Nodejs,Expressjs,Spring,Spring boot
-                  MongoDb,dynamodb,Mysql,postgres
-                  AWS,Devops,Git,Github
-                  Jira,Linux
-                  C,C++,Java,Python
-                 &amp; Data Structure and Algorithm </span> </li>
-								<li class="d-flex"><span>Education:</span> <span>Bachelor of Engineering</span></li>
-								<li class="d-flex"><span>Language:</span> <span>English, Hindi</span></li>
-							 <li class="d-flex"><span>Other Skills:</span> <span>Leadership Project Management Communication skills Team Management &amp;Critical Thinking </span></li>
-								<li class="d-flex"><span>Interest:</span> <span>Traveling, Travel Photography, Teaching</span></li>
-							</ul>
+									<li class="d-flex"><span>Profile:</span> <span>SOFTWARE DEVELOPER
+                  </span></li>
+									<li class="d-flex"><span>Domain:</span> <span>ReactJs React-Redux,Hooks,Anugular 18,Nodejs,Expressjs,Spring,Spring boot
+                    MongoDb,dynamodb,Mysql,postgres
+                    AWS,Devops,Git,Github
+                    Jira,Linux
+                    C,C++,Java,Python
+                   &amp; Data Structure and Algorithm </span> </li>
+									<li class="d-flex"><span>Education:</span> <span>Bachelor of Engineering</span></li>
+									<li class="d-flex"><span>Language:</span> <span>English, Hindi</span></li>
+								 <li class="d-flex"><span>Other Skills:</span> <span>Leadership Project Management Communication skills Team Management &amp;Critical Thinking </span></li>
+									<li class="d-flex"><span>Interest:</span> <span>Traveling, Travel Photography, Teaching</span></li>
+								</ul>
+							</div>
 						</div>
-					</div>
 
-					<div class="counter-wrap ftco-animate d-flex mt-md-3">
-						<div class="text">
-							<p class="mb-4">
-								<span class="number" data-number="30">0</span> <span>+</span>
-								<span>&nbsp; Projects completed</span>
-							</p>
-							<p><a href="https://www.linkedin.com/in/vikash-dubey-517461262/" class="btn btn-primary py-3 px-3">LinkedIn</a></p>
+						<div class="counter-wrap ftco-animate d-flex mt-md-3">
+							<div class="text">
+								<p class="mb-4">
+									<span class="number" data-number="30">0</span> <span>+</span>
+									<span>&nbsp; Projects completed</span>
+								</p>
+								<p><a href="https://www.linkedin.com/in/vikash-dubey-517461262/" class="btn btn-primary py-3 px-3">LinkedIn</a></p>
 						</div>
 					</div>
 				</div>
@@ -578,7 +679,7 @@
 
     <!-- Companies Section -->
     <section class="ftco-section ftco-no-pb" id="companies-section">
-      <div class="container">
+    	<div class="container">
         <div class="row justify-content-center mb-5 pb-5">
           <div class="col-md-7 heading-section text-center ftco-animate">
             <h1 class="big big-2">Companies</h1>
@@ -586,32 +687,32 @@
             <p>Professional journey across diverse organizations</p>
           </div>
         </div>
-        <div class="row">
+		<div class="row">
           <div class="col-md-4 mb-4">
             <div class="company-card text-center p-4 ftco-animate">
               <div class="company-icon mb-3">
                 <i class="icon-building-o"></i>
-              </div>
+		</div>
               <h3>UpGrad</h3>
               <p class="position">Senior Technical Trainer</p>
               <p class="description">Led MERN, Spring Boot, and DevOps projects; designed DSA and CP modules.</p>
-            </div>
-          </div>
+					</div>
+				</div>
           <div class="col-md-4 mb-4">
             <div class="company-card text-center p-4 ftco-animate">
               <div class="company-icon mb-3">
                 <i class="icon-building-o"></i>
-              </div>
+					</div>
               <h3>DutosLearning Pvt. Ltd</h3>
               <p class="position">Senior Software Developer</p>
               <p class="description">Developed scalable EdTech applications using MERN & Spring Boot.</p>
-            </div>
-          </div>
+				</div>
+			</div>
           <div class="col-md-4 mb-4">
             <div class="company-card text-center p-4 ftco-animate">
               <div class="company-icon mb-3">
                 <i class="icon-building-o"></i>
-              </div>
+		</div>
               <h3>Acadeview</h3>
               <p class="position">Technical Trainer</p>
               <p class="description">Conducted training sessions and mentored students.</p>
@@ -701,7 +802,7 @@
             <p>Contributing to education and student development</p>
           </div>
         </div>
-        <div class="row">
+			<div class="row">
           <div class="col-md-4 mb-4">
             <div class="college-card text-center p-4 ftco-animate" style="background-image: url('images/lpua.jpg'); background-size: cover; background-position: center; min-height: 300px; position: relative;">
               <div class="overlay" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.6);"></div>
@@ -709,9 +810,9 @@
                 <h3>LPU</h3>
                 <p class="position">Technical Trainer</p>
                 <p class="description">Conducted technical training sessions and workshops for students.</p>
-              </div>
-            </div>
-          </div>
+    				</div>
+    			</div>
+    				</div>
           <div class="col-md-4 mb-4">
             <div class="college-card text-center p-4 ftco-animate" style="background-image: url('images/chitkara.jpg'); background-size: cover; background-position: center; min-height: 300px; position: relative;">
               <div class="overlay" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.6);"></div>
@@ -719,8 +820,8 @@
                 <h3>Chitkara University</h3>
                 <p class="position">Technical Trainer</p>
                 <p class="description">Provided technical education and mentorship to students.</p>
-              </div>
-            </div>
+				</div>
+    		</div>
           </div>
           <div class="col-md-4 mb-4">
             <div class="college-card text-center p-4 ftco-animate" style="background-image: url('images/sushan.jpg'); background-size: cover; background-position: center; min-height: 300px; position: relative;">
@@ -751,110 +852,12 @@
                 <p class="description">Provided technical education and skill development training.</p>
               </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
-	
-    <section class="ftco-section ftco-no-pb" id="resume-section">
-    	<div class="container">
-    		<div class="row justify-content-center pb-5">
-          <div class="col-md-10 heading-section text-center ftco-animate">
-          	<h1 class="big big-2">Resume</h1>
-            <h2 class="mb-4">Resume</h2>
-            <p>5+ Years of Experience in developing cross-platform applications using
-              ReactJS, Node.js, and React Native. Proficient in HTML, CSS, ExpressJS,
-              MongoDB, JavaScript, PostgreSQL, and AWS cloud services, with expertise in
-              data structures and algorithms (DSA), project management, and competitive
-              programming. Skilled in building scalable solutions and leading projects from
-              inception to completion.</p>
-          </div>
-        </div>
-
-		<div class="row">
-			<h1 class="big-4">Experience</h1>
-			<div class="underline"></div>
-		</div>
-		<br>
-		
-		<div class="row">
-				<div class="col-md-6">
-					<div class="resume-wrap ftco-animate">
-						<span class="date">March 2024 - Present</span>
-						<h2>SR. Project Manager</h2>
-						<span class="position">UpGrad
-            </span>
-						<p class="mt-4">Led MERN, Spring Boot, and DevOps projects; designed DSA and CP modules to build scalable apps and improve team problem-solving. 
-							<ul>
-								<li>Led and managed projects using MERN Stack, Java Spring Boot, and DevOps to build scalable and robust applications..</li>
-								<li>Ensured high-quality development by applying best practices in backend and frontend integration across multiple platforms.</li>
-								<li>Designed structured learning modules for DSA and Competitive Programming to boost team efficiency and problem-solving skills.</li>
-							</ul>
-						</p>
-					</div>
-
-				</div>
-
-				<div class="col-md-6">
-					<div class="resume-wrap ftco-animate">
-						<span class="date">Jan 2022-Jan 2024</span>
-						<h2>SR. SOFTWARE DEVELOPER</h2>
-						<span class="position">DutosLearning Pvt. Ltd</span>
-            <p class="mt-4">Developed scalable EdTech apps using MERN & Spring Boot; led cross-functional team aligning platform with product vision, enhancing engagement.
-						 <ul>
-								<li>Developed and launched scalable, user-centric web and mobile applications for the EdTech sector using the MERN stack and Java Spring Boot.</li>
-                <li>Enhanced accessibility and learner engagement by delivering high-performance platforms tailored to user needs.</li>
-							  <li>Led a cross-functional team, collaborating with designers, product managers, and stakeholders to build a high-impact platform aligned with the company's vision.</li>
-							</ul>
-						</p>
-					</div>
-
-          
-
-				</div>
-			</div>
-
-      
-
-		<br>
-		<br>
-
-		<div class="row">
-			<h1 class="big-4">Education</h1>
-			<div class="underline"></div>
-		</div>
-		<br>
-		
-			<div class="row">
-    			<div class="col-md-6">
-    				<div class="resume-wrap ftco-animate">
-    					<span class="date">2015-2019</span>
-    					<h2>Bachelor of Engineering</h2>
-    					<span class="position">Sharda University</span>
-    					<p class="mt-4">Grade: First class distinction.</p>
-    				</div>
-    			</div>
-
-    			<div class="col-md-6">
-    				<div class="resume-wrap ftco-animate">
-    					<span class="date">2013-2015</span>
-    					<h2>Higher Secondary School</h2>
-    					<span class="position">D.A.V.(CBSE)
-              </span>
-    					<p class="mt-4">Grade: First class distinction.</p>
-    				</div>
-				</div>
-    		</div>
-
-    		<div class="row justify-content-center mt-5">
-    			<div class="col-md-6 text-center ftco-animate">
-    				<a href="assets/Vikas.pdf" download class="btn download-cv-btn">
-                        Download CV
-                    </a>
     			</div>
     		</div>
     	</div>
     </section>
+	
+  
 
 
    
@@ -930,7 +933,7 @@
 			</div>
           <div class="col-md-4 d-flex ftco-animate">
           	<div class="blog-entry justify-content-end">
-              <a href="https://lotlite.com" class="block-20 zoom-effect" style="background-image: url('images/proj_6.jpg');">
+              <a href="https://lotlite.com" class="block-20 zoom-effect" style="background-image: url('');">
               </a>
               <div class="text mt-3 float-right d-block">
                 <h3 class="heading"><a href="https://lotlite.com">Lotlite Technology</a></h3>
@@ -948,7 +951,7 @@
           <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
             <div class="block-18">
               <div class="text">
-                <strong class="number" data-number="20">0</strong>
+                <strong class="number" data-number="50">0</strong>
                 <span>Achievements</span>
               </div>
             </div>
@@ -956,7 +959,7 @@
           <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
             <div class="block-18">
               <div class="text">
-                <strong class="number" data-number="30">0</strong>
+                <strong class="number" data-number="50">0</strong>
                 <span>Projects</span>
               </div>
             </div>
@@ -996,95 +999,8 @@
 	</section>
 
 
-    <!-- Teaching Experience Section -->
-    <section class="ftco-section" id="teaching-section">
-      <div class="container">
-        <div class="row justify-content-center mb-5 pb-5">
-          <div class="col-md-7 heading-section text-center ftco-animate">
-            <h1 class="big big-2">Teaching Experience</h1>
-            <h2 class="mb-4">Teaching Experience</h2>
-            <p>Passionate about sharing knowledge and helping others grow</p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-12">
-            <div class="timeline-centered">
-              <article class="timeline-entry">
-                <div class="timeline-entry-inner">
-                  <div class="timeline-icon color-1">
-                    <i class="icon-pen2"></i>
-                  </div>
-                  <div class="timeline-label">
-                    <h2>Online Teaching</h2>
-                    <p>• Conducted online courses on various technical topics</p>
-                    <p>• Created comprehensive learning materials and resources</p>
-                    <p>• Mentored students in their learning journey</p>
-                  </div>
-                </div>
-              </article>
-              <article class="timeline-entry">
-                <div class="timeline-entry-inner">
-                  <div class="timeline-icon color-2">
-                    <i class="icon-pen2"></i>
-                  </div>
-                  <div class="timeline-label">
-                    <h2>Workshops & Training</h2>
-                    <p>• Organized and conducted technical workshops</p>
-                    <p>• Provided hands-on training sessions</p>
-                    <p>• Helped participants build practical skills</p>
-                  </div>
-                </div>
-              </article>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Development Experience Section -->
-    <section class="ftco-section" id="development-section">
-      <div class="container">
-        <div class="row justify-content-center mb-5 pb-5">
-          <div class="col-md-7 heading-section text-center ftco-animate">
-            <h1 class="big big-2">Development</h1>
-            <h2 class="mb-4">Development Experience</h2>
-            <p>Professional experience in software development and technical solutions</p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-12">
-            <div class="timeline-centered">
-              <article class="timeline-entry">
-                <div class="timeline-entry-inner">
-                  <div class="timeline-icon color-3">
-                    <!-- <i class="icon-code"></i> -->
-                  </div>
-                  <div class="timeline-label">
-                    <h2>Software Development</h2>
-                    <p>• Developed and maintained various software applications</p>
-                    <p>• Implemented best practices in coding and architecture</p>
-                    <p>• Collaborated with teams to deliver high-quality solutions</p>
-                  </div>
-                </div>
-              </article>
-              <article class="timeline-entry">
-                <div class="timeline-entry-inner">
-                  <div class="timeline-icon color-4">
-                    <!-- <i class="icon-code"></i> -->
-                  </div>
-                  <div class="timeline-label">
-                    <h2>Technical Solutions</h2>
-                    <p>• Designed and implemented technical solutions</p>
-                    <p>• Optimized performance and scalability</p>
-                    <p>• Ensured security and reliability of applications</p>
-                  </div>
-                </div>
-              </article>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+    
+  
 
     <!-- Consulting Section -->
     <section class="ftco-section" id="consulting-section">
@@ -1097,40 +1013,64 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-md-4">
-            <div class="services text-center">
-              <div class="icon d-flex justify-content-center align-items-center">
-                <span class="flaticon-analysis"></span>
+          <div class="col-md-4 mb-4">
+            <div class="consulting-card text-center p-4 ftco-animate" data-aos="fade-up" data-aos-delay="100">
+              <div class="icon-wrapper mb-4">
+                <i class="icon-user-tie"></i>
               </div>
-              <div class="text">
-                <h3>Carrer Consultancy</h3>
-                <p>Guiding individuals in career planning, skill development, resume building, and job readiness to achieve professional growth and success.</p>
-                <a href="https://wa.me/7439474237?text=Hello!%20I'm%20interested%20in%20booking%20a%20consultation%20for%20Career%20Consultancy" class="btn btn-primary" target="_blank">Book Now</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="services text-center">
-              <div class="icon d-flex justify-content-center align-items-center">
-                <span class="flaticon-ideas"></span>
-              </div>
-              <div class="text">
-                <h3>Industrial Overview </h3>
-                <p>Experienced in web development, UI/UX design, and software engineering. Skilled in creating innovative, responsive, and user-centric digital solutions.</p>
-                <a href="https://wa.me/7439474237?text=Hello!%20I'm%20interested%20in%20booking%20a%20consultation%20for%20Industrial%20Overview" class="btn btn-primary" target="_blank">Book Now</a>
+              <h3>One-to-One Career Counselling</h3>
+              <p>Personalized career guidance to help you navigate your professional journey, identify opportunities, and achieve your career goals.</p>
+              <a href="https://wa.me/7439474237?text=Hello!%20I'm%20interested%20in%20One-to-One%20Career%20Counselling" class="btn btn-primary mt-3" target="_blank">Book Now</a>
               </div>
             </div>
+          <div class="col-md-4 mb-4">
+            <div class="consulting-card text-center p-4 ftco-animate" data-aos="fade-up" data-aos-delay="200">
+              <div class="icon-wrapper mb-4">
+                <i class="icon-graduation-cap"></i>
           </div>
-          <div class="col-md-4">
-            <div class="services text-center">
-              <div class="icon d-flex justify-content-center align-items-center">
-                <span class="flaticon-innovation"></span>
+              <h3>One-to-One Tutoring</h3>
+              <p>Customized learning sessions tailored to your pace and needs, focusing on specific technical skills and concepts you want to master.</p>
+              <a href="https://wa.me/7439474237?text=Hello!%20I'm%20interested%20in%20One-to-One%20Tutoring" class="btn btn-primary mt-3" target="_blank">Book Now</a>
               </div>
-              <div class="text">
-                <h3>Specializion Topic</h3>
-                <p>Specialized in full-stack web development, cloud computing, database management, cybersecurity, and building scalable, efficient software solutions for businesses.</p>
-                <a href="https://wa.me/7439474237?text=Hello!%20I'm%20interested%20in%20booking%20a%20consultation%20for%20Specialization%20Topic" class="btn btn-primary" target="_blank">Book Now</a>
               </div>
+          <div class="col-md-4 mb-4">
+            <div class="consulting-card text-center p-4 ftco-animate" data-aos="fade-up" data-aos-delay="300">
+              <div class="icon-wrapper mb-4">
+                <i class="icon-users"></i>
+            </div>
+              <h3>Kids/College Students</h3>
+              <p>Specialized programs designed for young learners and college students to build foundational skills and prepare for future tech careers.</p>
+              <a href="https://wa.me/7439474237?text=Hello!%20I'm%20interested%20in%20programs%20for%20Kids/College%20Students" class="btn btn-primary mt-3" target="_blank">Book Now</a>
+          </div>
+              </div>
+          <div class="col-md-4 mb-4">
+            <div class="consulting-card text-center p-4 ftco-animate" data-aos="fade-up" data-aos-delay="400">
+              <div class="icon-wrapper mb-4">
+                <i class="icon-presentation"></i>
+              </div>
+              <h3>Group Lectures</h3>
+              <p>Interactive group sessions covering various technical topics, perfect for teams, educational institutions, or organizations seeking collective learning.</p>
+              <a href="https://wa.me/7439474237?text=Hello!%20I'm%20interested%20in%20Group%20Lectures" class="btn btn-primary mt-3" target="_blank">Book Now</a>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="consulting-card text-center p-4 ftco-animate" data-aos="fade-up" data-aos-delay="500">
+              <div class="icon-wrapper mb-4">
+                <i class="icon-code"></i>
+              </div>
+              <h3>Live Projects Experience</h3>
+              <p>Hands-on experience working on real-world projects, gaining practical skills and building a portfolio that stands out to employers.</p>
+              <a href="https://wa.me/7439474237?text=Hello!%20I'm%20interested%20in%20Live%20Projects%20Experience" class="btn btn-primary mt-3" target="_blank">Book Now</a>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="consulting-card text-center p-4 ftco-animate" data-aos="fade-up" data-aos-delay="600">
+              <div class="icon-wrapper mb-4">
+                <i class="icon-question-circle"></i>
+              </div>
+              <h3>Doubt Solving</h3>
+              <p>Get your technical questions answered with detailed explanations and practical examples to enhance your understanding.</p>
+              <a href="https://wa.me/7439474237?text=Hello!%20I%20have%20some%20doubts%20I'd%20like%20to%20discuss" class="btn btn-primary mt-3" target="_blank">Book Now</a>
             </div>
           </div>
         </div>
@@ -1223,21 +1163,21 @@
     </div>
     <div class="row">
       <div class="col-md-6 mx-auto">
-        <form action="#" class="consulting-form" id="consultingForm">
+        <form id="consultingForm" class="consulting-form" onsubmit="sendEmail(event)">
           <div class="form-group">
-            <input type="text" class="form-control" placeholder="Your Name" id="name">
+            <input type="text" class="form-control" placeholder="Your Name" id="name" required>
           </div>
           <div class="form-group">
-            <input type="text" class="form-control" placeholder="Your Email" id="email">
+            <input type="email" class="form-control" placeholder="Your Email" id="email" required>
           </div>
           <div class="form-group">
-            <input type="text" class="form-control" placeholder="Subject" id="subject">
+            <input type="text" class="form-control" placeholder="Subject" id="subject" required>
           </div>
           <div class="form-group">
-            <textarea name="" id="message" cols="30" rows="7" class="form-control" placeholder="Message"></textarea>
+            <textarea name="" id="message" cols="30" rows="7" class="form-control" placeholder="Message" required></textarea>
           </div>
           <div class="form-group">
-            <button type="button" onclick="redirectToWhatsApp()" class="btn btn-primary py-3 px-4">Book Session</button>
+            <button type="submit" class="btn btn-primary py-3 px-4">Book Session</button>
           </div>
         </form>
       </div>
@@ -1263,7 +1203,7 @@
 
 
   <!-- loader -->
-  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
 
 
   <script src="js/jquery.min.js"></script>
@@ -1299,5 +1239,40 @@
   }
   </script>
     
+  <!-- Add EmailJS SDK -->
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script>
+    (function() {
+      emailjs.init("service_vay1mr6");
+    })();
+    
+    function sendEmail(e) {
+      e.preventDefault();
+      
+      const name = document.getElementById('name').value;
+      const email = document.getElementById('email').value;
+      const subject = document.getElementById('subject').value;
+      const message = document.getElementById('message').value;
+      
+      const templateParams = {
+        from_name: name,
+        from_email: email,
+        subject: subject,
+        message: message
+      };
+      
+      emailjs.send('service_vay1mr6', 'YOUR_TEMPLATE_ID', templateParams)
+        .then(function(response) {
+          alert('Booking request sent successfully!');
+          document.getElementById('consultingForm').reset();
+        }, function(error) {
+          alert('Failed to send booking request. Please try again.');
+          console.log('Error:', error);
+          // Fallback to WhatsApp if email fails
+          redirectToWhatsApp();
+        });
+    }
+  </script>
+   
   </body>
 </html>
